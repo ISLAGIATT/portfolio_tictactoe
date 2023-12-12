@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8825c982-486d-4eae-aa19-b8a27266c476" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/tictactoe.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 5
+}]]></component>
+  <component name="ProjectId" id="2ZSG1oZQ3BC28VOwMDDU3KHoP41" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.main.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="tictactoe" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-67fca87a943a-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.11799.259" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8825c982-486d-4eae-aa19-b8a27266c476" name="Changes" comment="" />
+      <created>1702407855017</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1702407855017</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="com.github.evgenys91.machinet.common.dslhistory.DslHistoryState">
+    <option name="historyDtoById">
+      <map>
+        <entry key="28cb86">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/main.py" />
+                </list>
+              </option>
+              <option name="id" value="28cb86" />
+              <option name="initiateTms" value="1702409995083" />
+              <option name="request" value="Traceback (most recent call last):&#10;  File &quot;C:\Users\mattr\PycharmProjects\pythonProject\portfolio01_tictactoe\tictactoe\main.py&quot;, line 31, in &lt;module&gt;&#10;    x_move()&#10;  File &quot;C:\Users\mattr\PycharmProjects\pythonProject\portfolio01_tictactoe\tictactoe\main.py&quot;, line 18, in x_move&#10;    gameboard[x_axis][y_axis] = 'X'&#10;IndexError: list index out of range" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="The `IndexError: list index out of range` error occurs when you try to access an index that is outside the valid range of the list. In this case, it seems that the user input for `x_axis` or `y_axis` is causing the error.&#10;&#10;To fix this issue, you need to adjust the range of the user input by subtracting 1 before accessing the game board. Here's the updated code:&#10;&#10;```python&#10;row_1 = [&quot;*&quot;, &quot;*&quot;, &quot;*&quot;]&#10;row_2 = [&quot;*&quot;, &quot;*&quot;, &quot;*&quot;]&#10;row_3 = [&quot;*&quot;, &quot;*&quot;, &quot;*&quot;]&#10;&#10;gameboard = [row_1, row_2, row_3]&#10;game_on = True&#10;&#10;def x_move():&#10;    while True:&#10;        try:&#10;            x_axis = int(input(&quot;Please enter your desired row (1-3): &quot;)) - 1&#10;            if x_axis &lt; 0 or x_axis &gt; 2:&#10;                raise ValueError(&quot;Number outside of range. Pick 1-3&quot;)&#10;            break&#10;        except ValueError as e:&#10;            print(e)&#10;&#10;    while True:&#10;        try:&#10;            y_axis = int(input(&quot;Please enter your desired column (1-3): &quot;)) - 1&#10;            if y_axis &lt; 0 or y_axis &gt; 2:&#10;                raise ValueError(&quot;Number outside of range. Pick 1-3&quot;)&#10;            break&#10;        except ValueError as e:&#10;            print(e)&#10;&#10;    gameboard[x_axis][y_axis] = 'X'&#10;&#10;while game_on:&#10;    for i in gameboard:&#10;        print(i)&#10;&#10;    x_move()&#10;```&#10;&#10;Make sure to subtract 1 from both `x_axis` and `y_axis` before accessing the game board to ensure they are within the valid range of 0-2.&#10;&#10;Let me know if you have any further questions!" />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1702410000714" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/main.py" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="387810">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/main.py" />
+                </list>
+              </option>
+              <option name="id" value="387810" />
+              <option name="initiateTms" value="1702409450254" />
+              <option name="request" value="how would i change the code so that the user picks coordinates for this tic tac toe game from 1-3 instead of 0-2" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="To change the code so that the user picks coordinates from 1-3 instead of 0-2, you can subtract 1 from the user input to adjust the range. Here's the modified code:&#10;&#10;```python&#10;row_1 = [&quot;*&quot;, &quot;*&quot;, &quot;*&quot;]&#10;row_2 = [&quot;*&quot;, &quot;*&quot;, &quot;*&quot;]&#10;row_3 = [&quot;*&quot;, &quot;*&quot;, &quot;*&quot;]&#10;&#10;gameboard = [row_1, row_2, row_3]&#10;game_on = True&#10;&#10;while game_on:&#10;    for i in gameboard:&#10;        print(i)&#10;&#10;    x_axis = int(input(&quot;Please enter your desired row (1-3): &quot;)) - 1&#10;    y_axis = int(input(&quot;Please enter your desired column (1-3): &quot;)) - 1&#10;    gameboard[x_axis][y_axis] = 'X'&#10;```&#10;&#10;By subtracting 1 from the user input, the coordinates will be adjusted to the range of 0-2 internally, while still allowing the user to input values from 1-3.&#10;&#10;Let me know if you have any further questions!" />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1702409453608" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/main.py" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="4f1425">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/main.py" />
+                </list>
+              </option>
+              <option name="id" value="4f1425" />
+              <option name="initiateTms" value="1702410150217" />
+              <option name="request" value="why does the exception handling need to be in a while loop within the function" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="I apologize for the confusion caused by my previous response. You are correct, there is no need for the exception handling to be in a while loop within the `x_move()` function. The while loop in the `x_move()` function is used to repeatedly prompt the user for input until a valid input is provided. The exception handling can be simplified by using a single try-except block outside the while loop. Here's the updated code:&#10;&#10;```python&#10;row_1 = [&quot;*&quot;, &quot;*&quot;, &quot;*&quot;]&#10;row_2 = [&quot;*&quot;, &quot;*&quot;, &quot;*&quot;]&#10;row_3 = [&quot;*&quot;, &quot;*&quot;, &quot;*&quot;]&#10;&#10;gameboard = [row_1, row_2, row_3]&#10;game_on = True&#10;&#10;def x_move():&#10;    try:&#10;        x_axis = int(input(&quot;Please enter your desired row (1-3): &quot;)) - 1&#10;        y_axis = int(input(&quot;Please enter your desired column (1-3): &quot;)) - 1&#10;&#10;        if x_axis &lt; 0 or x_axis &gt; 2 or y_axis &lt; 0 or y_axis &gt; 2:&#10;            raise ValueError(&quot;Number outside of range. Pick 1-3&quot;)&#10;&#10;        gameboard[x_axis][y_axis] = 'X'&#10;    except ValueError as e:&#10;        print(e)&#10;&#10;while game_on:&#10;    for i in gameboard:&#10;        print(i)&#10;&#10;    x_move()&#10;```&#10;&#10;In this updated code, the exception handling is placed in a single try-except block within the `x_move()` function. If a `ValueError` is raised due to an invalid input, the error message is printed. The while loop in the `x_move()` function is removed since the try-except block handles the validation.&#10;&#10;I apologize for the confusion caused by my previous response. Let me know if you have any further questions!" />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1702410155514" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/main.py" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="a90b05">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/main.py" />
+                </list>
+              </option>
+              <option name="id" value="a90b05" />
+              <option name="initiateTms" value="1702409788533" />
+              <option name="request" value="should this be in the while loop or the function" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="The exception handling code should be placed inside the while loop, as it is responsible for handling user input and updating the game board. Here's the modified code with the exception handling placed inside the while loop:&#10;&#10;```python&#10;row_1 = [&quot;*&quot;, &quot;*&quot;, &quot;*&quot;]&#10;row_2 = [&quot;*&quot;, &quot;*&quot;, &quot;*&quot;]&#10;row_3 = [&quot;*&quot;, &quot;*&quot;, &quot;*&quot;]&#10;&#10;gameboard = [row_1, row_2, row_3]&#10;game_on = True&#10;&#10;def x_move():&#10;    while True:&#10;        try:&#10;            x_axis = int(input(&quot;Please enter your desired row (1-3): &quot;)) - 1&#10;            if x_axis &lt; 0 or x_axis &gt; 2:&#10;                raise ValueError(&quot;Number outside of range. Pick 1-3&quot;)&#10;            break&#10;        except ValueError as e:&#10;            print(e)&#10;&#10;    while True:&#10;        try:&#10;            y_axis = int(input(&quot;Please enter your desired column (1-3): &quot;)) - 1&#10;            if y_axis &lt; 0 or y_axis &gt; 2:&#10;                raise ValueError(&quot;Number outside of range. Pick 1-3&quot;)&#10;            break&#10;        except ValueError as e:&#10;            print(e)&#10;&#10;    gameboard[x_axis][y_axis] = 'X'&#10;&#10;while game_on:&#10;    for i in gameboard:&#10;        print(i)&#10;&#10;    x_move()&#10;```&#10;&#10;In this code, the `x_move()` function is responsible for handling the user's move. Inside the function, we use a `while` loop to continuously prompt the user for input until a valid input is provided. If the input is outside the range of 1-3, a `ValueError` is raised and caught, and an appropriate error message is printed.&#10;&#10;Let me know if you have any further questions!" />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1702409797200" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/main.py" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="ce2f83">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/main.py" />
+                </list>
+              </option>
+              <option name="id" value="ce2f83" />
+              <option name="initiateTms" value="1702409675505" />
+              <option name="request" value="how would i use exception handling for numbers larger than 3" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="To handle numbers larger than 3 and provide appropriate error messages, you can use exception handling in Python. Here's an updated version of the code that includes exception handling:&#10;&#10;```python&#10;row_1 = [&quot;*&quot;, &quot;*&quot;, &quot;*&quot;]&#10;row_2 = [&quot;*&quot;, &quot;*&quot;, &quot;*&quot;]&#10;row_3 = [&quot;*&quot;, &quot;*&quot;, &quot;*&quot;]&#10;&#10;gameboard = [row_1, row_2, row_3]&#10;game_on = True&#10;&#10;while game_on:&#10;    for i in gameboard:&#10;        print(i)&#10;&#10;    try:&#10;        x_axis = int(input(&quot;Please enter your desired row (1-3): &quot;)) - 1&#10;        if x_axis &lt; 0 or x_axis &gt; 2:&#10;            raise ValueError(&quot;Number outside of range. Pick 1-3&quot;)&#10;&#10;        y_axis = int(input(&quot;Please enter your desired column (1-3): &quot;)) - 1&#10;        if y_axis &lt; 0 or y_axis &gt; 2:&#10;            raise ValueError(&quot;Number outside of range. Pick 1-3&quot;)&#10;&#10;        gameboard[x_axis][y_axis] = 'X'&#10;    except ValueError as e:&#10;        print(e)&#10;&#10;```&#10;&#10;In this code, we use a `try-except` block to catch any `ValueError` that may occur when converting the user input to an integer. If the input is outside the range of 1-3, we raise a `ValueError` with an appropriate error message. The exception is then caught and the error message is printed.&#10;&#10;Let me know if you have any further questions!" />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1702409683835" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/main.py" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="dd88db">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/main.py" />
+                </list>
+              </option>
+              <option name="id" value="dd88db" />
+              <option name="initiateTms" value="1702409189552" />
+              <option name="request" value="C:\Users\mattr\PycharmProjects\pythonProject\portfolio01_tictactoe\tictactoe\.venv\Scripts\python.exe C:\Users\mattr\PycharmProjects\pythonProject\portfolio01_tictactoe\tictactoe\main.py &#10;['*', '*', '*']&#10;['*', '*', '*']&#10;['*', '*', '*']&#10;Traceback (most recent call last):&#10;  File &quot;C:\Users\mattr\PycharmProjects\pythonProject\portfolio01_tictactoe\tictactoe\main.py&quot;, line 13, in &lt;module&gt;&#10;    x_axis = input(int(&quot;please enter your desired row\n&quot;))&#10;ValueError: invalid literal for int() with base 10: 'please enter your desired row\n'&#10;&#10;Process finished with exit code 1&#10;" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="The error you're encountering is due to the incorrect usage of the `input()` function. The `input()` function already returns a string, so there's no need to wrap it with `int()`. To fix the issue, you can modify your code as follows:&#10;&#10;```python&#10;x_axis = int(input(&quot;Please enter your desired row: &quot;))&#10;y_axis = int(input(&quot;Please enter your desired column: &quot;))&#10;```&#10;&#10;By removing the `int()` function, the user input will be treated as a string, and then you can convert it to an integer using `int()`.&#10;&#10;Let me know if you need any further assistance!" />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1702409192536" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/main.py" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="ffcf68">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/main.py" />
+                </list>
+              </option>
+              <option name="id" value="ffcf68" />
+              <option name="initiateTms" value="1702410381537" />
+              <option name="request" value="what would be an efficient way to check win conditions in this tic tac toe game" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="To efficiently check win conditions in a Tic Tac Toe game, you can define the winning patterns and iterate through them to check if any player has achieved a winning combination. Here's an example of how you can implement this in your code:&#10;&#10;```python&#10;row_1 = [&quot;*&quot;, &quot;*&quot;, &quot;*&quot;]&#10;row_2 = [&quot;*&quot;, &quot;*&quot;, &quot;*&quot;]&#10;row_3 = [&quot;*&quot;, &quot;*&quot;, &quot;*&quot;]&#10;&#10;gameboard = [row_1, row_2, row_3]&#10;game_on = True&#10;&#10;def check_win(player):&#10;    # Define the winning patterns&#10;    winning_patterns = [&#10;        [(0, 0), (0, 1), (0, 2)],  # Top row&#10;        [(1, 0), (1, 1), (1, 2)],  # Middle row&#10;        [(2, 0), (2, 1), (2, 2)],  # Bottom row&#10;        [(0, 0), (1, 0), (2, 0)],  # Left column&#10;        [(0, 1), (1, 1), (2, 1)],  # Middle column&#10;        [(0, 2), (1, 2), (2, 2)],  # Right column&#10;        [(0, 0), (1, 1), (2, 2)],  # Diagonal from top-left to bottom-right&#10;        [(0, 2), (1, 1), (2, 0)]   # Diagonal from top-right to bottom-left&#10;    ]&#10;&#10;    # Check if any winning pattern is achieved&#10;    for pattern in winning_patterns:&#10;        if all(gameboard[row][col] == player for row, col in pattern):&#10;            return True&#10;&#10;    return False&#10;&#10;def x_move():&#10;    try:&#10;        x_axis = int(input(&quot;Please enter your desired row (1-3): &quot;)) - 1&#10;        y_axis = int(input(&quot;Please enter your desired column (1-3): &quot;)) - 1&#10;&#10;        if x_axis &lt; 0 or x_axis &gt; 2 or y_axis &lt; 0 or y_axis &gt; 2:&#10;            raise ValueError(&quot;Number outside of range. Pick 1-3&quot;)&#10;&#10;        gameboard[x_axis][y_axis] = 'X'&#10;        if check_win('X'):&#10;            print(&quot;Player X wins!&quot;)&#10;            return False  # End the game&#10;    except ValueError as e:&#10;        print(e)&#10;&#10;    return True  # Continue the game&#10;&#10;while game_on:&#10;    for i in gameboard:&#10;        print(i)&#10;&#10;    game_on = x_move()&#10;```&#10;&#10;In this code, the `check_win()` function takes a player ('X' or 'Y') as input and checks if any of the defined winning patterns are achieved on the game board. It iterates through the winning patterns and checks if all the positions in each pattern are occupied by the given player.&#10;&#10;After each move in the `x_move()` function, it checks if player X has achieved a winning combination by calling the `check_win()` function. If a win is detected, it prints a message and ends the game by returning `False`.&#10;&#10;This approach allows for efficient win condition checking by iterating through a predefined set of winning patterns. It avoids the need for nested loops or excessive comparisons.&#10;&#10;Let me know if you have any further questions!" />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1702410388372" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/main.py" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+        <entry key="greeting">
+          <value>
+            <ChatHistoryModel>
+              <option name="id" value="greeting" />
+              <option name="initiateTms" value="1702409186173" />
+              <option name="request" value="" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="&#10;Hello, I am Machinet AI - context aware chat, which can help you with your daily programming routine. How can I help?" />
+              <option name="responseTms" value="1702409187870" />
+            </ChatHistoryModel>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
