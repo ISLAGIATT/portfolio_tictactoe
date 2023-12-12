@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8825c982-486d-4eae-aa19-b8a27266c476" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/tictactoe.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    <list default="true" id="8825c982-486d-4eae-aa19-b8a27266c476" name="Changes" comment="initial commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,11 +74,48 @@
       <option name="presentableId" value="Default" />
       <updated>1702407855017</updated>
     </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1702411596956</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702411596956</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>
   <component name="com.github.evgenys91.machinet.common.dslhistory.DslHistoryState">
     <option name="historyDtoById">
       <map>
+        <entry key="061d63">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/main.py" />
+                </list>
+              </option>
+              <option name="id" value="061d63" />
+              <option name="initiateTms" value="1702412952085" />
+              <option name="request" value="how to start a function over again after passing while loops" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="To start a function over again after passing through while loops, you can use a loop control variable and a `break` statement. Here's an example of how you can modify the `x_move()` function to start over again after passing through the while loops:&#10;&#10;```python&#10;row_1 = [&quot;*&quot;, &quot;*&quot;, &quot;*&quot;]&#10;row_2 = [&quot;*&quot;, &quot;*&quot;, &quot;*&quot;]&#10;row_3 = [&quot;*&quot;, &quot;*&quot;, &quot;*&quot;]&#10;&#10;gameboard = [row_1, row_2, row_3]&#10;game_on = True&#10;&#10;def x_move():&#10;    while True:&#10;        try:&#10;            x_axis = int(input(&quot;Please enter your desired row (1-3): &quot;)) - 1&#10;            y_axis = int(input(&quot;Please enter your desired column (1-3): &quot;)) - 1&#10;&#10;            if x_axis &lt; 0 or x_axis &gt; 2 or y_axis &lt; 0 or y_axis &gt; 2:&#10;                raise ValueError(&quot;Number outside of range. Pick 1-3&quot;)&#10;&#10;            if gameboard[x_axis][y_axis] != &quot;*&quot;:&#10;                raise ValueError(&quot;Space already taken. Try again.&quot;)&#10;&#10;            gameboard[x_axis][y_axis] = 'X'&#10;            break  # Exit the while loop and continue with the rest of the function&#10;        except ValueError as e:&#10;            print(e)&#10;&#10;while game_on:&#10;    for i in gameboard:&#10;        print(i)&#10;&#10;    x_move()&#10;```&#10;&#10;In this modified code, the `x_move()` function uses a while loop to repeatedly prompt the user for input until valid input is provided. If any exception occurs, such as a `ValueError`, it will print the error message and continue with the next iteration of the while loop.&#10;&#10;Once valid input is provided and the game board is updated, the `break` statement is used to exit the while loop and continue with the rest of the function.&#10;&#10;This allows the function to start over again if the user provides invalid input or if the chosen space is already taken. The while loop will continue until the user provides valid input and a valid move is made.&#10;&#10;Let me know if you have any further questions!" />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1702412957257" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/main.py" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
         <entry key="28cb86">
           <value>
             <ChatHistoryModel>
